@@ -1,0 +1,34 @@
+
+<div class="container-fluid">
+  <div class="row my-5">
+    <div class="col-4 offset-4">
+      <div class="card border-info" style="max-width: 580px;">
+        <div class="col">
+          <div class="row my-5">
+            <div class="col-6 offset-3">
+              <h4>Regístrate</h4><br>
+              <form>
+                <div class="form-group">
+                  <label  for="inputEmail">Correo electronico</label>
+                  <input [formControl] = "inputEmail"  type="email" class="form-control form-text" id="inputEmail" placeholder="Correo electrónico" required="" value="">
+                </div>
+                  <div class="form-group">
+                    <label for="inputPassword1">Contraseña</label>
+                    <input [formControl] = "inputPassword1" type="password" class="form-control form-text" id="inputPassword1" placeholder="Contraseña" required="" value="">
+                  </div>
+                    <div class="form-group">
+                      <label for="inputPassword2">Confirmar contraseña</label>
+                      <input [formControl] = "inputPassword2" type="password" class="form-control" id="inputPassword2" placeholder="Contraseña" required="" value="">
+                    </div>
+                    <div *ngIf = "inputPassword2.value != inputPassword1.value" class="alert alert-danger text-center" role="alert">
+                      ¡Las contraseñas no coinciden!
+                    </div>
+                    <input type="submit" class="btn btn-info" value="¡Registrarse!">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

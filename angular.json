@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "miTienda"
+    }
+  },
+  "defaultProject": "miTienda",
+  "cli": {
+    "analytics": "f95afa6e-d976-44e4-99b0-e4895a34ce47"
+  }
 }
